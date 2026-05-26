@@ -1,0 +1,18 @@
+[package]
+name = "use-test-fixture"
+description = "Fixture metadata and scope vocabulary for RustUse testing primitives."
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+documentation = "https://docs.rs/use-test-fixture"
+keywords = ["test", "fixture", "metadata", "rustuse"]
+categories = ["development-tools", "data-structures"]
+
+[lints]
+workspace = true

@@ -1,0 +1,56 @@
+[workspace]
+release = false
+release_always = false
+changelog_update = false
+pr_labels = ["release"]
+max_analyze_commits = 2000
+
+[[package]]
+name = "use-test-assertion"
+release = true
+version_group = "rustuse-test"
+
+[[package]]
+name = "use-test-expectation"
+release = true
+version_group = "rustuse-test"
+
+[[package]]
+name = "use-test-case"
+release = true
+version_group = "rustuse-test"
+
+[[package]]
+name = "use-test-suite"
+release = true
+version_group = "rustuse-test"
+
+[[package]]
+name = "use-test-outcome"
+release = true
+version_group = "rustuse-test"
+
+[[package]]
+name = "use-test-status"
+release = true
+version_group = "rustuse-test"
+
+[[package]]
+name = "use-test-fixture"
+release = true
+version_group = "rustuse-test"
+
+[[package]]
+name = "use-test-snapshot"
+release = true
+version_group = "rustuse-test"
+
+[[package]]
+name = "use-test-report"
+release = true
+version_group = "rustuse-test"
+
+[[package]]
+name = "use-test"
+release = true
+version_group = "rustuse-test"

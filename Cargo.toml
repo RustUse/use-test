@@ -1,0 +1,75 @@
+[workspace]
+members = [
+    "crates/use-test",
+    "crates/use-test-assertion",
+    "crates/use-test-expectation",
+    "crates/use-test-case",
+    "crates/use-test-suite",
+    "crates/use-test-outcome",
+    "crates/use-test-status",
+    "crates/use-test-fixture",
+    "crates/use-test-snapshot",
+    "crates/use-test-report",
+]
+resolver = "2"
+
+[workspace.package]
+authors = ["RustUse Contributors"]
+edition = "2024"
+homepage = "https://rustuse.org"
+license = "MIT OR Apache-2.0"
+documentation = "https://rustuse.org"
+publish = false
+readme = "README.md"
+repository = "https://github.com/RustUse/use-test"
+rust-version = "1.95.0"
+version = "0.1.0"
+
+[workspace.dependencies]
+use-test-assertion = { version = "0.1.0", path = "crates/use-test-assertion" }
+use-test-expectation = { version = "0.1.0", path = "crates/use-test-expectation" }
+use-test-case = { version = "0.1.0", path = "crates/use-test-case" }
+use-test-suite = { version = "0.1.0", path = "crates/use-test-suite" }
+use-test-outcome = { version = "0.1.0", path = "crates/use-test-outcome" }
+use-test-status = { version = "0.1.0", path = "crates/use-test-status" }
+use-test-fixture = { version = "0.1.0", path = "crates/use-test-fixture" }
+use-test-snapshot = { version = "0.1.0", path = "crates/use-test-snapshot" }
+use-test-report = { version = "0.1.0", path = "crates/use-test-report" }
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+cargo = { level = "warn", priority = -1 }
+doc_markdown = "allow"
+derivable_impls = "allow"
+expect_used = "allow"
+float_cmp = "allow"
+missing_const_for_fn = "allow"
+missing_errors_doc = "allow"
+module_name_repetitions = "allow"
+must_use_candidate = "allow"
+multiple_crate_versions = "allow"
+return_self_not_must_use = "allow"
+nursery = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+todo = "deny"
+unimplemented = "deny"
+unwrap_used = "warn"
+
+[workspace.metadata.rustuse.release]
+publish = false
+versioning = "lockstep-0.x"
+first-publish-candidates = [
+    "use-test-assertion",
+    "use-test-expectation",
+    "use-test-case",
+    "use-test-suite",
+    "use-test-outcome",
+    "use-test-status",
+    "use-test-fixture",
+    "use-test-snapshot",
+    "use-test-report",
+    "use-test",
+]
